@@ -1,0 +1,545 @@
+@mixin flex {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+    nav {
+        float: right;
+
+        img {
+            height: auto;
+            width: auto;
+            margin-right: 3rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            margin-right: 3rem;
+        }
+    }
+}
+
+.content {
+    @include flex;
+    height: 736px;
+    margin-top: 0px;
+}
+
+.content_left {
+    flex: 40%;
+    background-image: url("Group 159.png");
+    background: cover;
+    color: white;
+    height: 100%;
+
+    h2::first-letter {
+        font-size: 55px;
+    }
+
+    p {
+        padding: 15%;
+        text-align: justify;
+        margin-top: 290px-72px;
+    }
+}
+
+.content_right {
+    margin-top: 0px;
+    flex: 60%;
+    background-image: url("backimage.jpg");
+    background-size: cover;
+    background-color: transparent;
+    background-position: center;
+    height: 100%;
+
+    img {
+        margin-top: 417px-72px;
+    }
+}
+
+.content_text {
+    padding: 15%;
+    text-align: justify;
+    margin-top: 290px-72px;
+}
+
+.mark_content {
+    color: white;
+    height: 97px;
+    margin-top: 4.5rem;
+    font-size: 65px;
+    font-weight: 250;
+
+
+}
+
+.container_2 {
+    background-color: rgb(83, 78, 78, 0.4);
+    margin-top: 12.7rem;
+    height: 140px;
+    color: white;
+    padding: 3.5rem;
+}
+
+.flex-container {
+    @include flex;
+    background-color: wheat;
+    justify-content: space-evenly;
+
+}
+
+.flex-container>div {
+    margin-top: 5px;
+    width: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        color: white;
+    }
+
+
+}
+
+.content_right_2 {
+    flex: 60%;
+    height: 100%;
+    background-color: black;
+    color: white;
+
+    h2 {
+        padding: 10px;
+        text-align: left;
+        margin-top: 100px;
+        color: white;
+    }
+
+    p {
+        padding: 1rem;
+        margin-right: 20%;
+        text-align: justify;
+        color: white;
+    }
+}
+
+.content_left_2 {
+    flex: 40%;
+    background-color: black;
+    color: white;
+    height: 100%;
+
+    h2::first-letter {
+        font-size: 55px;
+    }
+
+    p {
+        padding: 15%;
+        text-align: justify;
+        margin-top: 290px-72px;
+    }
+}
+
+.container_3 {
+    height: 90px;
+    font-size: 30px;
+    background-color: black;
+    color: goldenrod;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.img_cards {
+    @include flex;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 380px) {
+    .img_cards {
+        flex-direction: column;
+    }
+}
+
+.gallery {
+    flex: 30%;
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    border-radius: 11px;
+    height: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.gallery_space {
+    flex: 10%;
+}
+
+.gallery_space_2 {
+    flex: 30%;
+}
+
+.gallery:hover {
+    border: 1px solid #777;
+    border-radius: 5px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.commercial {
+    background-image: url("Group 159.png");
+    height: 751px;
+
+    h2 {
+        text-align: center;
+        color: goldenrod;
+        padding: 100px;
+    }
+
+    .img_cards {
+        @include flex;
+        justify-content: space-evenly;
+    }
+
+    .gallery {
+        flex: 20%;
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 180px;
+        border-radius: 5px;
+        height: 50%;
+        margin-left: 20px;
+    }
+
+    .gallery_space {
+        flex: 10%;
+    }
+
+    .gallery_space_2 {
+        flex: 30%;
+    }
+
+    .gallery:hover {
+        border: 1px solid #777;
+        border-radius: 5px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    .desc {
+        padding: 15px;
+        text-align: center;
+        color: white;
+    }
+
+}
+
+.release {
+    background-image: url("Mask group.png");
+    height: 751px;
+
+    .img_cards {
+        @include flex;
+        justify-content: space-evenly;
+    }
+
+    .gallery {
+        flex: 25%;
+        margin: 5px;
+        border: 2px solid #ccc;
+        float: left;
+        width: 180px;
+        border-radius: 5px;
+        height: 50%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .gallery_space {
+        flex: 12.5%;
+    }
+
+    .gallery_space_2 {
+        flex: 30%;
+    }
+
+    .gallery:hover {
+        border: 2px solid #777;
+        border-radius: 5px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    .desc {
+        padding: 15px;
+        text-align: center;
+        color: white;
+    }
+
+
+    h2 {
+        text-align: center;
+        color: white;
+        padding: 100px;
+    }
+
+    .cards {
+
+        @include flex;
+        color: white;
+        background-image: url("Mask group.png");
+        justify-content: space-evenly;
+
+    }
+
+    .card_1 {
+        flex: 30%;
+        color: white;
+        margin-left: 0px;
+        background-image: url("Mask group.png");
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    .card_2 {
+        flex: 10%;
+        background-image: url("Mask group.png");
+    }
+}
+
+
+.news_main {
+    background-color: black;
+    height: 751px;
+    display: flex;
+
+}
+
+.news {
+    flex: 25%;
+
+    h3 {
+        margin-top: 100px;
+        color: goldenrod;
+        margin-bottom: 5rem;
+
+    }
+
+    h5 {
+        color: goldenrod;
+        text-align: left;
+    }
+
+    input[type=text] {
+
+        margin-top: 150px;
+        width: 40%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid darkgray;
+        background-color: black;
+        color: white;
+    }
+
+    textarea {
+        margin-top: 150px;
+        width: 40%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid darkgray;
+        background-color: black;
+        color: white;
+    }
+
+    input[type=email] {
+        width: 90%;
+        background-color: black;
+        color: white;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid darkgray;
+    }
+
+
+    p {
+        color: white;
+    }
+
+}
+
+.news_space {
+    flex: 15%;
+}
+
+.news_content {
+    flex: 45%;
+    margin-left: 20px;
+
+    p {
+        color: white;
+        margin-right: 5rem;
+    }
+}
+
+.contact {
+    @include flex;
+    background-color: black;
+    height: 751px;
+
+}
+
+.content_space {
+    flex: 15%;
+}
+
+.contact_form {
+    flex: 30%;
+
+    h3 {
+        margin-top: 100px;
+        color: goldenrod;
+    }
+
+    input[type=text] {
+        width: 40%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid darkgray;
+        background-color: black;
+        color: white;
+    }
+
+    input[type=email] {
+        width: 90%;
+        background-color: black;
+        color: white;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid darkgray;
+    }
+
+}
+
+.contact_img {
+    flex: 40%;
+    background-color: black;
+    margin-top: 100px;
+}
+
+.foot {
+    @include flex;
+    background-image: url("Group 159.png");
+    height: 264px;
+}
+
+.foot_space {
+    flex: 35%;
+}
+
+.foot_content {
+    flex: 30%;
+    text-align: center;
+    align-items: center;
+
+    h2 {
+        font-weight: 100;
+        font-size: medium;
+        text-align: center;
+        color: white;
+    }
+
+    p {
+        text-align: center;
+        color: white;
+    }
+}
+
+.animated-number {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+@keyframes changeNumber {
+    0% {
+        content: "42332";
+    }
+
+    25% {
+        content: "42334"
+    }
+
+    50% {
+        content: "42336";
+    }
+
+    75% {
+        content: "42338";
+    }
+
+    100% {
+        content: "42342";
+    }
+}
+
+.animated-number::after {
+    animation: changeNumber 7s forwards;
+    display: inline-block;
+    content: "";
+}

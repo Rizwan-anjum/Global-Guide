@@ -1,0 +1,501 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+header nav {
+  float: right;
+}
+header nav img {
+  height: auto;
+  width: auto;
+  margin-right: 3rem;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+  margin-right: 3rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 736px;
+  margin-top: 0px;
+}
+
+.content_left {
+  flex: 40%;
+  background-image: url("Group 159.png");
+  background: cover;
+  color: white;
+  height: 100%;
+}
+.content_left h2::first-letter {
+  font-size: 55px;
+}
+.content_left p {
+  padding: 15%;
+  text-align: justify;
+  margin-top: 218px;
+}
+
+.content_right {
+  margin-top: 0px;
+  flex: 60%;
+  background-image: url("backimage.jpg");
+  background-size: cover;
+  background-color: transparent;
+  background-position: center;
+  height: 100%;
+}
+.content_right img {
+  margin-top: 345px;
+}
+
+.content_text {
+  padding: 15%;
+  text-align: justify;
+  margin-top: 218px;
+}
+
+.mark_content {
+  color: white;
+  height: 97px;
+  margin-top: 4.5rem;
+  font-size: 65px;
+  font-weight: 250;
+}
+
+.container_2 {
+  background-color: rgba(83, 78, 78, 0.4);
+  margin-top: 12.7rem;
+  height: 140px;
+  color: white;
+  padding: 3.5rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: wheat;
+  justify-content: space-evenly;
+}
+
+.flex-container > div {
+  margin-top: 5px;
+  width: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+.flex-container > div h2 {
+  font-size: 30px;
+}
+.flex-container > div p {
+  color: white;
+}
+
+.content_right_2 {
+  flex: 60%;
+  height: 100%;
+  background-color: black;
+  color: white;
+}
+.content_right_2 h2 {
+  padding: 10px;
+  text-align: left;
+  margin-top: 100px;
+  color: white;
+}
+.content_right_2 p {
+  padding: 1rem;
+  margin-right: 20%;
+  text-align: justify;
+  color: white;
+}
+
+.content_left_2 {
+  flex: 40%;
+  background-color: black;
+  color: white;
+  height: 100%;
+}
+.content_left_2 h2::first-letter {
+  font-size: 55px;
+}
+.content_left_2 p {
+  padding: 15%;
+  text-align: justify;
+  margin-top: 218px;
+}
+
+.container_3 {
+  height: 90px;
+  font-size: 30px;
+  background-color: black;
+  color: goldenrod;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.img_cards {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 380px) {
+  .img_cards {
+    flex-direction: column;
+  }
+}
+.gallery {
+  flex: 30%;
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  border-radius: 11px;
+  height: 50%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.gallery_space {
+  flex: 10%;
+}
+
+.gallery_space_2 {
+  flex: 30%;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+  border-radius: 5px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.commercial {
+  background-image: url("Group 159.png");
+  height: 751px;
+}
+.commercial h2 {
+  text-align: center;
+  color: goldenrod;
+  padding: 100px;
+}
+.commercial .img_cards {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.commercial .gallery {
+  flex: 20%;
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  border-radius: 5px;
+  height: 50%;
+  margin-left: 20px;
+}
+.commercial .gallery_space {
+  flex: 10%;
+}
+.commercial .gallery_space_2 {
+  flex: 30%;
+}
+.commercial .gallery:hover {
+  border: 1px solid #777;
+  border-radius: 5px;
+}
+.commercial .gallery img {
+  width: 100%;
+  height: auto;
+}
+.commercial .desc {
+  padding: 15px;
+  text-align: center;
+  color: white;
+}
+
+.release {
+  background-image: url("Mask group.png");
+  height: 751px;
+}
+.release .img_cards {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.release .gallery {
+  flex: 25%;
+  margin: 5px;
+  border: 2px solid #ccc;
+  float: left;
+  width: 180px;
+  border-radius: 5px;
+  height: 50%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.release .gallery_space {
+  flex: 12.5%;
+}
+.release .gallery_space_2 {
+  flex: 30%;
+}
+.release .gallery:hover {
+  border: 2px solid #777;
+  border-radius: 5px;
+}
+.release .gallery img {
+  width: 100%;
+  height: auto;
+}
+.release .desc {
+  padding: 15px;
+  text-align: center;
+  color: white;
+}
+.release h2 {
+  text-align: center;
+  color: white;
+  padding: 100px;
+}
+.release .cards {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: url("Mask group.png");
+  justify-content: space-evenly;
+}
+.release .card_1 {
+  flex: 30%;
+  color: white;
+  margin-left: 0px;
+  background-image: url("Mask group.png");
+}
+.release .card_1 a {
+  text-decoration: none;
+  color: white;
+}
+.release .card_2 {
+  flex: 10%;
+  background-image: url("Mask group.png");
+}
+
+.news_main {
+  background-color: black;
+  height: 751px;
+  display: flex;
+}
+
+.news {
+  flex: 25%;
+}
+.news h3 {
+  margin-top: 100px;
+  color: goldenrod;
+  margin-bottom: 5rem;
+}
+.news h5 {
+  color: goldenrod;
+  text-align: left;
+}
+.news input[type=text] {
+  margin-top: 150px;
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid darkgray;
+  background-color: black;
+  color: white;
+}
+.news textarea {
+  margin-top: 150px;
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid darkgray;
+  background-color: black;
+  color: white;
+}
+.news input[type=email] {
+  width: 90%;
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid darkgray;
+}
+.news p {
+  color: white;
+}
+
+.news_space {
+  flex: 15%;
+}
+
+.news_content {
+  flex: 45%;
+  margin-left: 20px;
+}
+.news_content p {
+  color: white;
+  margin-right: 5rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 751px;
+}
+
+.content_space {
+  flex: 15%;
+}
+
+.contact_form {
+  flex: 30%;
+}
+.contact_form h3 {
+  margin-top: 100px;
+  color: goldenrod;
+}
+.contact_form input[type=text] {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid darkgray;
+  background-color: black;
+  color: white;
+}
+.contact_form input[type=email] {
+  width: 90%;
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid darkgray;
+}
+
+.contact_img {
+  flex: 40%;
+  background-color: black;
+  margin-top: 100px;
+}
+
+.foot {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-image: url("Group 159.png");
+  height: 264px;
+}
+
+.foot_space {
+  flex: 35%;
+}
+
+.foot_content {
+  flex: 30%;
+  text-align: center;
+  align-items: center;
+}
+.foot_content h2 {
+  font-weight: 100;
+  font-size: medium;
+  text-align: center;
+  color: white;
+}
+.foot_content p {
+  text-align: center;
+  color: white;
+}
+
+.animated-number {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+@keyframes changeNumber {
+  0% {
+    content: "42332";
+  }
+  25% {
+    content: "42334";
+  }
+  50% {
+    content: "42336";
+  }
+  75% {
+    content: "42338";
+  }
+  100% {
+    content: "42342";
+  }
+}
+.animated-number::after {
+  animation: changeNumber 7s forwards;
+  display: inline-block;
+  content: "";
+}/*# sourceMappingURL=style.css.map */
