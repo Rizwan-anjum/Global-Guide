@@ -3,6 +3,8 @@ Figma to HTML, Bootstrap, and JavaScript Conversion
 Table of Contents:
 Features
 Technologies Used
+
+
 This project involves converting a Figma design into a fully functional and responsive website using HTML, Bootstrap, and JavaScript. The aim is to accurately translate the design into code, ensuring it works seamlessly across different devices and browsers.
 
 Features:
